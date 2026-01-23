@@ -24,3 +24,9 @@
 Asciinema even-demo: https://asciinema.org/a/wf0esxPKqEJdw2aL
 
 Asciinema calc-demo: https://asciinema.org/a/PggXys98eqfssV4O
+
+Asciinema gcd-demo: https://asciinema.org/a/GQLxvZRemJP7EIb2
+
+Asciinema progression-demo: https://asciinema.org/a/OOAN2Y5YDVI6BxvW
+
+Asciinema prime-demo: https://asciinema.org/a/gBEZE0M6QKhPerPV
