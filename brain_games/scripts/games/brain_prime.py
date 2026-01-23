@@ -1,22 +1,25 @@
 from random import randint
 from ..cli import welcome_user
 
-def is_even():
-    
+def prime():
+
+    def is_prime(num):
+
+        divisors = []
+
+        for i in range(1, num // 2 + 1):
+            if num % i == 0:
+                divisors.append(i)
+        
+        return "yes" if len(divisors) == 1 else "no"
+
     print("Welcome to the Brain Games!")
     name = welcome_user()
-    print("Answer \"yes\" if the number is even, otherwise answer \"no\".")  
-
+    print("Answer \"yes\" if given number is prime. Otherwise answer \"no\".")
 
     for _ in range(3):
-        question = randint(1, 100)
-        right_answer = isinstance(question, int) and question % 2 == 0
-
-        if right_answer:
-            right_answer = "yes"
-        else:
-            right_answer = "no"
-    
+        question = randint(1, 101)
+        right_answer = is_prime(question)
         print(f"Question: {question}")
         your_answer = input("Your answer: ")
 
@@ -28,10 +31,11 @@ def is_even():
             print("Correct!")
         
     print(f"Congratulation, {name}!")
-    
+
 def main():
-    is_even()
+    prime()
 
 if __name__ == "__main__":
     main()
+        
 
