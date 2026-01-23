@@ -37,7 +37,7 @@ def choose_gcd():
         else:
             print("Correct!")
         
-    print(f"Congratulation, {name}!")
+    print(f"Congratulations, {name}!")
 
 def main():
     return choose_gcd()
