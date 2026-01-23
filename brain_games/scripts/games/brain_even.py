@@ -27,7 +27,7 @@ def is_even():
         else:
             print("Correct!")
         
-    print(f"Congratulation, {name}!")
+    print(f"Congratulations, {name}!")
     
 def main():
     is_even()

@@ -30,7 +30,7 @@ def prime():
         else:
             print("Correct!")
         
-    print(f"Congratulation, {name}!")
+    print(f"Congratulations, {name}!")
 
 def main():
     prime()

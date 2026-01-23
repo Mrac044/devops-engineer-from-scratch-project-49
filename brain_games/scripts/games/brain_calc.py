@@ -32,7 +32,7 @@ def calc():
         else:
             print("Correct!")
         
-    print(f"Congratulation, {name}!")
+    print(f"Congratulations, {name}!")
     
 
 def main():

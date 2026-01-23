@@ -41,7 +41,7 @@ def miss_progression():
         else:
             print("Correct!")
         
-    print(f"Congratulation, {name}!")
+    print(f"Congratulations, {name}!")
         
 def main():
     miss_progression()
