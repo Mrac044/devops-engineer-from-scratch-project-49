@@ -1,6 +1,7 @@
 from random import randint, choice
 from ..cli import welcome_user
 
+
 def calc():  
 
     print("Welcome to the Brain Games!")
@@ -26,7 +27,8 @@ def calc():
         your_answer = int(input("Your answer: "))
 
         if your_answer != right_answer:
-            print(f"\"{your_answer}\" is wrong answer ;(. Correct answer was \"{right_answer}\"")
+            print(f"'{your_answer}' is wrong answer ;(.")
+            print(f"Correct answer was '{right_answer}'")
             print(f"Let's try again, {name}!")
             return
         else:
@@ -37,6 +39,7 @@ def calc():
 
 def main():
     calc()
+
 
 if __name__ == "__main__":
     main()

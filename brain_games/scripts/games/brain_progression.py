@@ -1,6 +1,7 @@
 from random import randint
 from ..cli import welcome_user
 
+
 def miss_progression():
     
     print("Welcome to the Brain Games!")
@@ -35,16 +36,19 @@ def miss_progression():
         your_answer = int(input("Your answer: "))
 
         if your_answer != right_answer:
-            print(f"\"{your_answer}\" is wrong answer ;(. Correct answer was \"{right_answer}\"")
+            print(f"'{your_answer}' is wrong answer ;(.")
+            print(f"Correct answer was '{right_answer}'")
             print(f"Let's try again, {name}!")
             return
         else:
             print("Correct!")
         
     print(f"Congratulations, {name}!")
-        
+
+
 def main():
     miss_progression()
+
 
 if __name__ == "__main__":
     main()

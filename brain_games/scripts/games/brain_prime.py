@@ -1,6 +1,7 @@
 from random import randint
 from ..cli import welcome_user
 
+
 def prime():
 
     def is_prime(num):
@@ -24,7 +25,8 @@ def prime():
         your_answer = input("Your answer: ")
 
         if your_answer != right_answer:
-            print(f"\"{your_answer}\" is wrong answer ;(. Correct answer was \"{right_answer}\"")
+            print(f"'{your_answer}' is wrong answer ;(.")
+            print(f"Correct answer was '{right_answer}'")
             print(f"Let's try again, {name}!")
             return
         else:
@@ -32,8 +34,10 @@ def prime():
         
     print(f"Congratulations, {name}!")
 
+
 def main():
     prime()
+
 
 if __name__ == "__main__":
     main()
