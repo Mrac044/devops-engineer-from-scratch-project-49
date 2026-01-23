@@ -20,3 +20,7 @@
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Mrac044_devops-engineer-from-scratch-project-49&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=Mrac044_devops-engineer-from-scratch-project-49)
 
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=Mrac044_devops-engineer-from-scratch-project-49&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=Mrac044_devops-engineer-from-scratch-project-49)
+
+Asciinema even-demo: https://asciinema.org/a/wf0esxPKqEJdw2aL
+
+Asciinema calc-demo: https://asciinema.org/a/PggXys98eqfssV4O
