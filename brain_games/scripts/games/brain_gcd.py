@@ -1,5 +1,4 @@
 from random import randint
-from ..cli import welcome_user
 
 
 def choose_gcd():
@@ -17,33 +16,19 @@ def choose_gcd():
     
         return stages[-2]
 
-    print("Welcome to the Brain Games!")
-    name = welcome_user()
-    print("Find the greatest common divisor of given numbers.")
+    DESCRIPTION = "Find the greatest common divisor of given numbers."
     
-    for _ in range(3):
-        num_1 = randint(1, 50)
-        num_2 = randint(1, 50)
+    num_1 = randint(1, 50)
+    num_2 = randint(1, 50)
 
-        right_answer = gcd(num_1, num_2)
-        question = f"{num_1} {num_2}"
-    
-        print(f"Question: {question}")
-        your_answer = int(input("Your answer: "))
+    right_answer = gcd(num_1, num_2)
+    question = f"{num_1} {num_2}"
 
-        if your_answer != right_answer:
-            print(f"'{your_answer}' is wrong answer ;(.")
-            print(f"Correct answer was '{right_answer}'")
-            print(f"Let's try again, {name}!")
-            return
-        else:
-            print("Correct!")
-        
-    print(f"Congratulations, {name}!")
+    return question, right_answer
 
 
 def main():
-    choose_gcd()
+    return choose_gcd()
 
 
 if __name__ == "__main__":

@@ -1,12 +1,9 @@
 from random import randint
-from ..cli import welcome_user
 
 
 def miss_progression():
     
-    print("Welcome to the Brain Games!")
-    name = welcome_user()
-    print("What number is missing in the progression?")
+    DESCRIPTION = "What number is missing in the progression?"
     
     def gen_progression():
 
@@ -18,36 +15,22 @@ def miss_progression():
             progression.append(progression[-1] + step)
 
         return progression
-
-    for _ in range(3):
         
-        progression = gen_progression()
-        miss_item = randint(0, len(progression) - 1)
-        progression[miss_item], right_answer = "..", progression[miss_item]
+    progression = gen_progression()
+    miss_item = randint(0, len(progression) - 1)
+    progression[miss_item], right_answer = "..", progression[miss_item]
     
-        question = ""
+    question = ""
     
-        for i in progression:
-            question += str(i) + " "
+    for i in progression:
+        question += str(i) + " "
 
-        question = question.strip()
+    question = question.strip()
 
-        print(f"Question: {question}")
-        your_answer = int(input("Your answer: "))
-
-        if your_answer != right_answer:
-            print(f"'{your_answer}' is wrong answer ;(.")
-            print(f"Correct answer was '{right_answer}'")
-            print(f"Let's try again, {name}!")
-            return
-        else:
-            print("Correct!")
-        
-    print(f"Congratulations, {name}!")
-
+    return question, right_answer
 
 def main():
-    miss_progression()
+    return miss_progression()
 
 
 if __name__ == "__main__":

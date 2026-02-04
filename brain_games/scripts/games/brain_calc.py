@@ -1,44 +1,29 @@
 from random import randint, choice
-from ..cli import welcome_user
 
 
 def calc():  
 
-    print("Welcome to the Brain Games!")
-    name = welcome_user()
-    print("What is the result of the expression?")
+    DESCRIPTION = "What is the result of the expression?"
+    OPERATIONS = ("+", "-", "*")
 
-    operations = ("+", "-", "*")
+    num_1 = randint(1, 20)
+    num_2 = randint(1, 20)
+    operation = choice(operations)
 
-    for _ in range(3):
-        num_1 = randint(1, 20)
-        num_2 = randint(1, 20)
-        operation = choice(operations)
-
-        if operation == "+":
-            right_answer = num_1 + num_2
-        elif operation == "-":
-            right_answer = num_1 - num_2
-        else:
-            right_answer = num_1 * num_2
+    if operation == "+":
+        right_answer = num_1 + num_2
+    elif operation == "-":
+        right_answer = num_1 - num_2
+    else:
+        right_answer = num_1 * num_2
         
-        question = f"{num_1} {operation} {num_2}"
-        print(f"Question: {question}")
-        your_answer = int(input("Your answer: "))
+    question = f"{num_1} {operation} {num_2}"
 
-        if your_answer != right_answer:
-            print(f"'{your_answer}' is wrong answer ;(.")
-            print(f"Correct answer was '{right_answer}'")
-            print(f"Let's try again, {name}!")
-            return
-        else:
-            print("Correct!")
-        
-    print(f"Congratulations, {name}!")
-    
+    return question, right_answer
+
 
 def main():
-    calc()
+    return calc(),
 
 
 if __name__ == "__main__":

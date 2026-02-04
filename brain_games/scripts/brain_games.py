@@ -1,13 +1,11 @@
-from .cli import welcome_user
+from engine import main as main_run
 
 
-def greet():
-    print('Welcome to the Brain Games!')
-
+def game_menu()
+    
 
 def main():
-    greet()
-    welcome_user()
+    
 
 
 if __name__ == "__main__":
