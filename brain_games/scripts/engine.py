@@ -1,9 +1,9 @@
 from .cli import welcome_user
 
-def run_game(game_func):
+def run_game(game_func, DESCRIPTION):
     
     name = str(welcome_user())
-    # print(game_func.DESCRIPTION)
+    print(DESCRIPTION)
     
     for _ in range(3):
         question, right_answer = game_func()
@@ -21,10 +21,10 @@ def run_game(game_func):
     print(f"Congratulations, {name}!")
 
 
-def main(game_func):
-    game_func = game_func()     # Распаковка функции
-    run_game(game_func)
+def main(game_func, DESCRIPTION):
+    game_func = game_func()             # func unpacking
+    run_game(game_func, DESCRIPTION)
 
 
 if __name__ == "__main__":
-    main(game_func)
+    main(game_func, DESCRIPTION)

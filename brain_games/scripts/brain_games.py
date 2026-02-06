@@ -9,15 +9,31 @@ from . import (
 
 
 def game_choice():
+
+    game_num = 0
+
     GAMES = {
-        'calc': main_calc,
-        'even': main_even,
-        'gcd': main_gcd,
-        'prime': main_prime,
-        'progression': main_progression
+        'calc': [main_calc, "What is the result of the expression?"],
+        'even': [main_even, "Answer \"yes\" if the number is even, otherwise answer \"no\"."],
+        'gcd': [main_gcd, "Find the greatest common divisor of given numbers."],
+        'prime': [main_prime, "Answer \"yes\" if given number is prime. Otherwise answer \"no\"."],
+        'progression': [main_progression, "What number is missing in the progression?"]
     }
-    choiced_game = input()
-    main_run(GAMES[choiced_game])
+    print("Choose the game:\n")
+    
+    for k, v in GAMES.items():
+        game_num += 1
+        print(f"{game_num}. {k}: {v[1]}")
+
+    print()
+
+    choiced_game = input("Your choice (enter the game name): ")
+    
+    while choiced_game not in GAMES:
+        print("This is not a game :(\n")
+        choiced_game = input("Please, enter name of the game:")
+
+    main_run(GAMES[choiced_game][0], GAMES[choiced_game][1])
 
 
 def main():
