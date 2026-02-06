@@ -13,11 +13,11 @@ def is_even():
     else:
         right_answer = "no"
     
-    return question, right_answer
+    return question, str(right_answer)
     
 
 def main():
-    return is_even()
+    return is_even
 
 
 if __name__ == "__main__":

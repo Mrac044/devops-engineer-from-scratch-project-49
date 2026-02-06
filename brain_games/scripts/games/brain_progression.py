@@ -27,10 +27,10 @@ def miss_progression():
 
     question = question.strip()
 
-    return question, right_answer
+    return question, str(right_answer)
 
 def main():
-    return miss_progression()
+    return miss_progression
 
 
 if __name__ == "__main__":

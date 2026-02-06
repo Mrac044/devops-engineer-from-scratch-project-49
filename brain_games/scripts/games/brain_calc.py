@@ -8,7 +8,7 @@ def calc():
 
     num_1 = randint(1, 20)
     num_2 = randint(1, 20)
-    operation = choice(operations)
+    operation = choice(OPERATIONS)
 
     if operation == "+":
         right_answer = num_1 + num_2
@@ -19,11 +19,11 @@ def calc():
         
     question = f"{num_1} {operation} {num_2}"
 
-    return question, right_answer
+    return question, str(right_answer)
 
 
 def main():
-    return calc(),
+    return calc
 
 
 if __name__ == "__main__":

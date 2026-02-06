@@ -18,11 +18,11 @@ def prime():
     question = randint(1, 101)
     right_answer = is_prime(question)
 
-    return question, right_answer
+    return question, str(right_answer)
 
 
 def main():
-    return prime()
+    return prime
 
 
 if __name__ == "__main__":

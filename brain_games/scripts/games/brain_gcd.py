@@ -24,11 +24,11 @@ def choose_gcd():
     right_answer = gcd(num_1, num_2)
     question = f"{num_1} {num_2}"
 
-    return question, right_answer
+    return question, str(right_answer)
 
 
 def main():
-    return choose_gcd()
+    return choose_gcd
 
 
 if __name__ == "__main__":
