@@ -15,8 +15,6 @@ def choose_gcd():
             stages.append(current_mod)
     
         return stages[-2]
-
-    DESCRIPTION = "Find the greatest common divisor of given numbers."
     
     num_1 = randint(1, 50)
     num_2 = randint(1, 50)

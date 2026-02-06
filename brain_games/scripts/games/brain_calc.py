@@ -3,7 +3,6 @@ from random import randint, choice
 
 def calc():  
 
-    DESCRIPTION = "What is the result of the expression?"
     OPERATIONS = ("+", "-", "*")
 
     num_1 = randint(1, 20)

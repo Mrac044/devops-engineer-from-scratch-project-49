@@ -2,9 +2,7 @@ from random import randint
 
 
 def miss_progression():
-    
-    DESCRIPTION = "What number is missing in the progression?"
-    
+        
     def gen_progression():
 
         progression_lenght = randint(5, 10)

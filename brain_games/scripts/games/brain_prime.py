@@ -13,8 +13,6 @@ def prime():
         
         return "yes" if len(divisors) == 1 else "no"
 
-    DESCRIPTION = "Answer \"yes\" if given number is prime. Otherwise answer \"no\"."
-
     question = randint(1, 101)
     right_answer = is_prime(question)
 

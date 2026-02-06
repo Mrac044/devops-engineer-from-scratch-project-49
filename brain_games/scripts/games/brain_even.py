@@ -3,8 +3,6 @@ from random import randint
 
 def is_even():
 
-    DESCRIPTION = "Answer \"yes\" if the number is even, otherwise answer \"no\"."
-
     question = randint(1, 100)
     right_answer = isinstance(question, int) and question % 2 == 0
 
