@@ -2,7 +2,7 @@ from random import randint
 from ..engine import run_game
 
 
-DESCRIPTION = "Answer \"yes\" if given number is prime. Otherwise answer \"no\"."
+DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def prime():
