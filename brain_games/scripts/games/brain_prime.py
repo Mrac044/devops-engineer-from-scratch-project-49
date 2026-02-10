@@ -1,4 +1,5 @@
 from random import randint
+from ..engine import run_game
 
 
 def prime():
@@ -21,6 +22,10 @@ def prime():
 
 def main():
     return prime
+
+
+def run():
+    run_game(prime, "Answer \"yes\" if given number is prime. Otherwise answer \"no\".")
 
 
 if __name__ == "__main__":

@@ -1,4 +1,5 @@
 from .engine import main as main_run
+from .cli import welcome_user
 from . import (
     main_calc, 
     main_even,
@@ -7,7 +8,14 @@ from . import (
     main_progression
 )
 
+def main():
+    welcome_user()
 
+
+if __name__ == "__main__":
+    main()
+
+'''
 def game_choice():
 
     game_num = 0
@@ -42,6 +50,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
+'''

@@ -1,4 +1,5 @@
 from random import randint
+from ..engine import run_game
 
 
 def is_even():
@@ -16,6 +17,10 @@ def is_even():
 
 def main():
     return is_even
+
+
+def run():
+    run_game(is_even, "Answer \"yes\" if the number is even, otherwise answer \"no\".")
 
 
 if __name__ == "__main__":

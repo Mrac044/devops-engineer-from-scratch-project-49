@@ -1,5 +1,6 @@
 from .cli import welcome_user
 
+
 def run_game(game_func, DESCRIPTION):
     
     name = str(welcome_user())
@@ -14,7 +15,7 @@ def run_game(game_func, DESCRIPTION):
             print(f"'{your_answer}' is wrong answer ;(.", end=" ")
             print(f"Correct answer was '{right_answer}'")
             print(f"Let's try again, {name}!")
-            break
+            return
         else:
             print("Correct!")
             
