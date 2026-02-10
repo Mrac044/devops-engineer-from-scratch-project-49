@@ -1,6 +1,9 @@
 from random import randint, choice
 from ..engine import run_game
 
+
+DESCRIPTION = "What is the result of the expression?"
+
 def calc():  
 
     OPERATIONS = ("+", "-", "*")
@@ -26,7 +29,7 @@ def main():
 
 
 def run():
-    run_game(calc, "What is the result of the expression?")
+    run_game(calc, DESCRIPTION)
 
 
 if __name__ == "__main__":

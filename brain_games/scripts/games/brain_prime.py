@@ -2,6 +2,8 @@ from random import randint
 from ..engine import run_game
 
 
+DESCRIPTION "Answer \"yes\" if given number is prime. Otherwise answer \"no\"."
+
 def prime():
 
     def is_prime(num):
@@ -25,7 +27,7 @@ def main():
 
 
 def run():
-    run_game(prime, "Answer \"yes\" if given number is prime. Otherwise answer \"no\".")
+    run_game(prime, DESCRIPTION)
 
 
 if __name__ == "__main__":

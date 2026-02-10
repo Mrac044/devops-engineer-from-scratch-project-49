@@ -2,6 +2,8 @@ from random import randint
 from ..engine import run_game
 
 
+DESCRIPTION = "Find the greatest common divisor of given numbers."
+
 def choose_gcd():
 
     def gcd(num_1, num_2) -> int:
@@ -31,7 +33,7 @@ def main():
 
 
 def run():
-    run_game(choose_gcd, "Find the greatest common divisor of given numbers.")
+    run_game(choose_gcd, DESCRIPTION)
 
 
 if __name__ == "__main__":

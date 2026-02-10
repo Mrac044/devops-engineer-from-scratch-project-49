@@ -2,6 +2,8 @@ from random import randint
 from ..engine import run_game
 
 
+DESCRIPTION = "Answer \"yes\" if the number is even, otherwise answer \"no\"."
+
 def is_even():
 
     question = randint(1, 100)
@@ -20,7 +22,7 @@ def main():
 
 
 def run():
-    run_game(is_even, "Answer \"yes\" if the number is even, otherwise answer \"no\".")
+    run_game(is_even, DESCRIPTION)
 
 
 if __name__ == "__main__":

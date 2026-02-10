@@ -1,5 +1,8 @@
 from .cli import welcome_user
 
+def game_func():
+    pass
+DESCRIPTION = ""
 
 def run_game(game_func, DESCRIPTION):
     
