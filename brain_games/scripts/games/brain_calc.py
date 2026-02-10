@@ -4,6 +4,7 @@ from ..engine import run_game
 
 DESCRIPTION = "What is the result of the expression?"
 
+
 def calc():  
 
     OPERATIONS = ("+", "-", "*")

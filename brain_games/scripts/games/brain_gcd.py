@@ -4,6 +4,7 @@ from ..engine import run_game
 
 DESCRIPTION = "Find the greatest common divisor of given numbers."
 
+
 def choose_gcd():
 
     def gcd(num_1, num_2) -> int:

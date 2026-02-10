@@ -4,6 +4,7 @@ from ..engine import run_game
 
 DESCRIPTION = "What number is missing in the progression?"
 
+
 def miss_progression():
         
     def gen_progression():

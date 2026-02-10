@@ -4,6 +4,7 @@ from ..engine import run_game
 
 DESCRIPTION = "Answer \"yes\" if the number is even, otherwise answer \"no\"."
 
+
 def is_even():
 
     question = randint(1, 100)
