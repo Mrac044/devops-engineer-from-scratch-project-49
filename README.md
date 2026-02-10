@@ -7,27 +7,32 @@
 
 ## Команды для запуска игр:
 
-- brain-even            *является ли число четным*
+- **brain-even**            *является ли число четным*
 
-- brain-calc            *вычеслите значение вырадения*
+- **brain-calc**            *вычеслите значение вырадения*
 
-- brain-gcd             *НОД двух чисел*
+- **brain-gcd**             *выберите НОД двух чисел*
 
-- brain-progression     *недостающий член прогрессии*
+- **brain-progression**     *недостающий член прогрессии*
 
-- brain-prime           *является ли число простым*
+- **brain-prime**           *является ли число простым*
 
 ## Демонстрация
 
-- Asciinema even-demo: https://asciinema.org/a/wf0esxPKqEJdw2aL
+### Игра "Проверка на чётность"
+[![asciicast](https://asciinema.org/a/wf0esxPKqEJdw2aL.svg)](https://asciinema.org/a/wf0esxPKqEJdw2aL)
 
-- Asciinema calc-demo: https://asciinema.org/a/PggXys98eqfssV4O
+### Игра "Калькулятор"
+[![asciicast](https://asciinema.org/a/PggXys98eqfssV4O.svg)](https://asciinema.org/a/PggXys98eqfssV4O)
 
-- Asciinema gcd-demo: https://asciinema.org/a/GQLxvZRemJP7EIb2
+### Игра "НОД"
+[![asciicast](https://asciinema.org/a/GQLxvZRemJP7EIb2.svg)](https://asciinema.org/a/GQLxvZRemJP7EIb2)
 
-- Asciinema progression-demo: https://asciinema.org/a/OOAN2Y5YDVI6BxvW
+### Игра "Арифметическая прогрессия"
+[![asciicast](https://asciinema.org/a/OOAN2Y5YDVI6BxvW.svg)](https://asciinema.org/a/OOAN2Y5YDVI6BxvW)
 
-- Asciinema prime-demo: https://asciinema.org/a/gBEZE0M6QKhPerPV
+### Игра "Простое ли число?"
+[![asciicast](https://asciinema.org/a/gBEZE0M6QKhPerPV.svg)](https://asciinema.org/a/gBEZE0M6QKhPerPV)
 
 ## Установка
 

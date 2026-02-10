@@ -9,3 +9,8 @@ __pycache__/
 
 # asciinemas
 *.cast
+
+# builds
+dist/
+build/
+*.whl
