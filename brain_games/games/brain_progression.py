@@ -5,10 +5,7 @@ DESCRIPTION = "What number is missing in the progression?"
 
 
 def miss_progression():
-
-
     def gen_progression():
-
         progression_lenght = randint(5, 10)
         progression = [randint(-10, 10)]
         step = randint(3, 11)
