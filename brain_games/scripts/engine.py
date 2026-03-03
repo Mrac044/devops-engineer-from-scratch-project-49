@@ -1,17 +1,11 @@
 from .cli import welcome_user
 
 
-def game_func():
-    pass
-
-
-DESCRIPTION = ""
-
-
-def run_game(game_func, DESCRIPTION):
+def launch_game(game_module):
     
     name = str(welcome_user())
-    print(DESCRIPTION)
+    print(game_module.DESCRIPTION)
+    game_func = game_module.main()
     
     for _ in range(3):
         question, right_answer = game_func()
@@ -27,12 +21,3 @@ def run_game(game_func, DESCRIPTION):
             print("Correct!")
             
     print(f"Congratulations, {name}!")
-
-
-def main(game_func, DESCRIPTION):
-    game_func = game_func()             # func unpacking
-    run_game(game_func, DESCRIPTION)
-
-
-if __name__ == "__main__":
-    main(game_func, DESCRIPTION)

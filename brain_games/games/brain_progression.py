@@ -1,9 +1,7 @@
 from random import randint
-from ..engine import run_game
 
 
 DESCRIPTION = "What number is missing in the progression?"
-
 
 def miss_progression():
         
@@ -34,10 +32,6 @@ def miss_progression():
 
 def main():
     return miss_progression
-
-
-def run():
-    run_game(miss_progression, DESCRIPTION)
 
 
 if __name__ == "__main__":
