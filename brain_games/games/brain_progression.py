@@ -5,15 +5,6 @@ DESCRIPTION = "What number is missing in the progression?"
 
 
 def miss_progression():
-    def gen_progression():
-        progression_lenght = randint(5, 10)
-        progression = [randint(-10, 10)]
-        step = randint(3, 11)
-
-        for _ in range(progression_lenght):
-            progression.append(progression[-1] + step)
-
-        return progression
         
     progression = gen_progression()
     miss_item = randint(0, len(progression) - 1)
@@ -27,6 +18,16 @@ def miss_progression():
     question = question.strip()
 
     return question, str(right_answer)
+
+def gen_progression() -> list:
+    progression_lenght = randint(5, 10)
+    progression = [randint(-10, 10)]
+    step = randint(3, 11)
+
+    for _ in range(progression_lenght):
+        progression.append(progression[-1] + step)
+
+    return progression
 
 
 def main():

@@ -1,4 +1,4 @@
-from brain_games.scripts.engine import launch_game
+from brain_games.engine import launch_game
 
 
 __all__ = (
