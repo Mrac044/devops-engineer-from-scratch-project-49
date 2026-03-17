@@ -11,6 +11,7 @@ def prime():
 
     return question, str(right_answer)
 
+
 def is_prime(num: int) -> str:
 
     divisors = []

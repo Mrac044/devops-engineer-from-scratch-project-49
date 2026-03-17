@@ -19,6 +19,7 @@ def miss_progression():
 
     return question, str(right_answer)
 
+
 def gen_progression() -> list:
     progression_lenght = randint(5, 10)
     progression = [randint(-10, 10)]

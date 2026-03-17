@@ -16,6 +16,7 @@ def is_even():
     
     return question, str(right_answer)
 
+
 def is_num_even(num: int) -> bool:
 
     answer = isinstance(num, int) and num % 2 == 0

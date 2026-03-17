@@ -14,6 +14,7 @@ def choose_gcd():
 
     return question, str(right_answer)
 
+
 def gcd(num_1: int, num_2: int) -> int:
 
     num_1 = int(num_1)

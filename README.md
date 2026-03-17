@@ -32,7 +32,7 @@
 [![asciicast](https://asciinema.org/a/OOAN2Y5YDVI6BxvW.svg)](https://asciinema.org/a/OOAN2Y5YDVI6BxvW)
 
 ### Игра "Простое ли число?"
-[![asciicast](https://asciinema.org/a/gBEZE0M6QKhPerPV.svg)](https://asciinema.org/a/gBEZE0M6QKhPerPV)
+<script src="https://asciinema.org/a/gBEZE0M6QKhPerPV.js" id="asciicast-gBEZE0M6QKhPerPV" async="true"></script>
 
 ## Установка
 
