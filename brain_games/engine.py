@@ -5,10 +5,9 @@ def launch_game(game_module):
     
     name = str(welcome_user())
     print(game_module.DESCRIPTION)
-    game_func = game_module.main()
     
     for _ in range(3):
-        question, right_answer = game_func()
+        question, right_answer = game_module.get_question_and_answer()
         print(f"Question: {question}")
         your_answer = (input("Your answer: "))
 

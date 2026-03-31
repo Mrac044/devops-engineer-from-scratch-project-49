@@ -4,7 +4,7 @@ from random import randint
 DESCRIPTION = "Answer \"yes\" if the number is even, otherwise answer \"no\"."
 
 
-def is_even():
+def get_question_and_answer():
 
     question = randint(1, 100)
     right_answer = is_num_even(question)
@@ -22,12 +22,3 @@ def is_num_even(num: int) -> bool:
     answer = isinstance(num, int) and num % 2 == 0
 
     return answer
-
-
-def main():
-    return is_even
-
-
-if __name__ == "__main__":
-    main()
-

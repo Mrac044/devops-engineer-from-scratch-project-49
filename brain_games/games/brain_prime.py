@@ -4,7 +4,7 @@ from random import randint
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def prime():
+def get_question_and_answer():
 
     question = randint(1, 101)
     right_answer = is_prime(question)
@@ -21,13 +21,5 @@ def is_prime(num: int) -> str:
             divisors.append(i)
         
     return "yes" if len(divisors) == 1 else "no"
-
-
-def main():
-    return prime
-
-
-if __name__ == "__main__":
-    main()
         
 

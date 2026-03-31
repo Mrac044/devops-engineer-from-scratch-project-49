@@ -4,7 +4,7 @@ from random import randint
 DESCRIPTION = "What number is missing in the progression?"
 
 
-def miss_progression():
+def get_question_and_answer():
         
     progression = gen_progression()
     miss_item = randint(0, len(progression) - 1)
@@ -29,11 +29,3 @@ def gen_progression() -> list:
         progression.append(progression[-1] + step)
 
     return progression
-
-
-def main():
-    return miss_progression
-
-
-if __name__ == "__main__":
-    main()

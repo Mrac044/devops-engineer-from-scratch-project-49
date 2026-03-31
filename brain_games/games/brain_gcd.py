@@ -4,7 +4,7 @@ from random import randint
 DESCRIPTION = "Find the greatest common divisor of given numbers."
 
 
-def choose_gcd():
+def get_question_and_answer():
     
     num_1 = randint(1, 50)
     num_2 = randint(1, 50)
@@ -27,11 +27,3 @@ def gcd(num_1: int, num_2: int) -> int:
         stages.append(current_mod)
     
     return stages[-2]
-
-
-def main():
-    return choose_gcd
-
-
-if __name__ == "__main__":
-    main()

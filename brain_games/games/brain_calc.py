@@ -4,7 +4,7 @@ from random import randint, choice
 DESCRIPTION = "What is the result of the expression?"
 
 
-def calc():  
+def get_question_and_answer():  
 
     OPERATIONS = ("+", "-", "*")
 
@@ -22,14 +22,5 @@ def calc():
     question = f"{num_1} {operation} {num_2}"
 
     return question, str(right_answer)
-
-
-def main():
-    return calc
-
-
-if __name__ == "__main__":
-    main()
-
 
 
